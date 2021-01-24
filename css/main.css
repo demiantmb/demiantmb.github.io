@@ -1,0 +1,103 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+main{
+	width:70%;
+	padding:50px;
+	margin:auto;
+	background-color:#cd00cd;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	box-shadow:inset 0px 0px 45px rgba(0, 0, 0, 0.5);
+}
+body{
+	background-image:url(../img/background.png);
+	font-family:cursive;
+	animation:bgpulse ease-out infinite 1s;
+}
+@keyframes bgpulse{
+	0%{
+		background-color:cyan;
+	}
+
+	100%{
+		background-color:black;
+	}
+}
+.photo{
+	margin:10px auto;
+	background-color:rgb(255, 204, 0);
+	width:calc(50% - 40px);
+	height:calc((35vw - 40px)/16*9);
+	box-shadow:10px 10px 10px rgba(0, 0, 0, 0.3);
+	background-position:center;
+	background-size:cover;
+	transition:all 0.8s ease;
+}
+.photo1{
+	background-image:url(../img/img1.jpeg);
+}
+.photo2{
+	background-image:url(../img/img2.jpeg);
+}
+.photo3{
+	background-image:url(../img/img3.jpeg);
+}
+.photo4{
+	background-image:url(../img/img4.jpeg);
+}
+.photo5{
+	background-image:url(../img/img5.jpeg);
+}
+.photo6{
+	background-image:url(../img/img6.jpeg);
+}
+
+
+
+
+h1{
+	width:100%;
+	text-align:center;
+	font-size:48px;
+	color:rgb(0, 255, 0);
+	text-shadow:0px 4px 0px rgb(0, 200, 0), 0px 4px 10px rgb(0, 0, 0);
+}
+h6{
+	text-align:center;
+	width:100%;
+	color:white;
+}
+.photo:hover{
+	transform:rotate(3deg) scale(1.07);
+}
+ul{
+	color:white;
+	font-family:cursive;
+	font-size:20px;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+}
+li{
+	display:inline-block;
+	padding:17px;
+	transition:0.8s ease;
+}
+a{
+	color:white;
+	text-decoration:none;
+}
+li:hover{
+	transform:scale(1.4) rotate(6deg);
+	transition:0.8s ease;
+}
+h2{
+		text-align:center;
+	text-shadow:0px 2px 1px #dbdbdb;
+	color:#ffffff;
+	font-family:cursive;
+}
